@@ -33,6 +33,8 @@ body {
   flex-basis: 200px;
   position: relative;
   padding: 10px;
+  z-index: 1;
+  box-shadow: 5px 10px 10px 5px #00000036;
 }
 
 .article {
@@ -52,6 +54,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  z-index: 1;
+  box-shadow: 0px 5px 10px 0px #00000036;
 }
 
 .navbar__logo {
@@ -125,6 +129,9 @@ body {
   color: #000000;
   background-color: aquamarine;
   cursor: pointer;
+  z-index: 999;
+  /* horizontal, vertical, blur, spread */
+  box-shadow: 0 0 10px 0 #000;
 }
 
 @media (max-width: 768px) {
