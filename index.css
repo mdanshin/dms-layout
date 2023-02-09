@@ -109,3 +109,19 @@ body {
 .post__content {
   flex: 1;
 }
+
+.help {
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+}
+
+.help__button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: #000000;
+  background-color: aquamarine;
+  cursor: pointer;
+}
