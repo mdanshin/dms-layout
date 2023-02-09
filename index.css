@@ -28,8 +28,9 @@ body {
 }
 
 .sidebar-left {
+  transition: flex-basis 0.5s ease-in-out;
   background-color: rgb(225, 255, 127);
-  flex: 0 0 200px;
+  flex-basis: 200px;
   position: relative;
   padding: 10px;
 }
@@ -124,4 +125,35 @@ body {
   color: #000000;
   background-color: aquamarine;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    justify-content: right;
+  }
+
+  .sidebar-left,
+  .help__button,
+  .slider,
+  .sidebar__menu,
+  .slider__button,
+  .navbar__logo {
+    display: none;
+  }
+
+}
+
+@media (max-height: 600px) {
+  .footer {
+    display: none;
+  }
+
+  .help {
+    bottom: 20px;
+  }
+}
+
+.content {
+  height: calc(100vh - 50px);
 }
