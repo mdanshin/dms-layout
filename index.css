@@ -9,7 +9,7 @@ body {
   background-color: #000000;
 }
 
-.layout {
+.App {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -74,24 +74,24 @@ body {
   color: rgb(255, 81, 0);
 }
 
-.sidebar__menu {
+.sidebar-left__menu {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.sidebar__menu>a {
+.sidebar-left__menu>a {
   text-decoration: none;
   color: rgb(255, 0, 238);
 }
 
-.slider {
+.sidebar-left__slider {
   position: absolute;
   bottom: 10px;
   right: 10px;
 }
 
-.slider__button {
+.sidebar-left__slider>button {
   background: #5af51388;
   border: none;
   height: 50px;
@@ -106,7 +106,7 @@ body {
   padding: 10px;
 }
 
-.post__title {
+.post__header {
   font-size: large;
   font-weight: 600;
 
